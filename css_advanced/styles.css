@@ -167,7 +167,7 @@ nav ul li a {
   font-size: 1rem;
   border: none;
   border-radius: 30px;
-  background-color: #C271FF
+  background-color: #C271FF;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;

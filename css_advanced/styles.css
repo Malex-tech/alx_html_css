@@ -29,12 +29,20 @@ body {
 
 /* Hero section tweaks */
 .hero-content h1 {
-  font-size: 8rem; /* Bigger text */
-  font-weight: 900;
+  font-size: 24px; /* Bigger text */
+  font-weight: 1600;
+  font-synthesis-weight: 700;
   color: white;
-  margin-bottom: 1rem;
+  font-style: ExtraBold;
+  margin-bottom: 20px;
 }
-
+.hero-content span {
+  display: inline-block;
+  margin: 0 0.4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .hero-tags span {
   font-size: 0.5rem; /* Smaller text */
   color: #ccc;
@@ -48,7 +56,7 @@ body {
   font-size: 0.5rem;
   border-radius: 999px; /* Full round edges */
   border: none;
-  background-color: #c271ff; /* Bright purple */
+  background-color: #c370ff; /* Bright purple */
   color: white;
   font-weight: 600;
   cursor: pointer;
@@ -140,13 +148,26 @@ nav ul li a {
   text-transform: uppercase;
 }
 
+.hero_tags span {
+  font-size: 0.5rem; /* Smaller text */
+  color: #ccc;
+  margin-right: 0.75rem;
+  letter-spacing: 1px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .hero-content button {
   margin-top: 1.5rem;
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
   border: none;
   border-radius: 30px;
-  background-color: #ff5e57;
+  background-color: #C271FF
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -165,9 +186,13 @@ nav ul li a {
 }
 
 .pros-section h2 {
-  font-size: 36px;
-  color: #C271FF;
+  font-size: 24px;
+  color: #777575;
   margin-bottom: 40px;
+}
+
+.pros-section h2 span {
+ color: #C271FF
 }
 
 .pros-grid {
@@ -179,7 +204,6 @@ nav ul li a {
 
 .pro-card {
   max-width: 200px;
-  background-color: rgba(255, 255, 255, 0.1);
   padding: 1rem;
   border-radius: 10px;
   color: white;
@@ -190,29 +214,57 @@ nav ul li a {
 .pro-card img {
   width: 100%;
   border-radius: 50%;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .pro-card h3 {
   font-size: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+}
+
+.pros-section .pro-card p {
+  line-height: 1.4;
+  font-size: 12px;
+  color: #777575;
+; /* or any color that works with your design */
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.pros-section .pro-card p span {
+  display: block; /* forces each span to its own line */
 }
 
 .pro-card p {
-  font-size: 14px;
-  color: #ddd;
+  font-size: 12px;
+  color: #777575;
+  font-style: italic;
 }
 
+p {
+  line-height: 1.5;
+  font-size: 16px;
+  color: #836161;
+  font-style: italic;
+}
+
+.first-line, .second-line {
+  display: block;
+}
+
+
+/* Testimonial Section */
 .testimonial {
-  background-color: rgb(224, 30, 224);
+  background-color: #c370ff;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 3rem 2rem; /* reduced padding for tighter vertical space */
   gap: 2rem;
-  border-radius: 12px;
-  margin-top: 1rem; /* shrink this to close the top gap */
+
+ /* shrink this to close the top gap */
 }
 
 .testimonial > div:first-child img {
@@ -234,7 +286,7 @@ nav ul li a {
 }
 
 .testimonial h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0;
   color: white;
 }
@@ -243,6 +295,7 @@ nav ul li a {
   margin: 0.5rem 0 0;
   font-size: 1rem;
   color: white;
+  font-style: italic;
 }
 
 .video-section {
@@ -257,6 +310,15 @@ nav ul li a {
   margin-bottom: 40px;
 }
 
+.some-section h2 {
+  color: black; /* default color for all text */
+  font-size: 2rem;
+}
+
+.some-section h2 .span {
+  color: purple; /* "medium" only */
+}
+
 .video-container {
   display: flex;
   justify-content: center;
@@ -268,7 +330,7 @@ nav ul li a {
   background-color: white;
   width: 220px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
   padding: 15px;
   position: relative;
   text-align: left;
@@ -298,63 +360,63 @@ nav ul li a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   padding: 10px;
 }
 
 .video-card h3 {
-  font-size: 1.1rem;
+  font-size: 0.7rem;
   margin: 15px 0 10px;
   color: #000;
 }
 
-.video-card p {
-  font-size: 0.9rem;
-  color: #555;
+ p {
+  font-size: 0.6rem;
+  color: #333;
 }
 
-.author-stars {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-}
 
 .author-info {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 10px;
 }
 
 .author-info img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
+   /* aligns with text */
 }
 
 .author-info h4 {
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   margin: 0;
+  color: #d022c4; /* darker for better visibility */
+  font-weight: 400;
+  font-style: italic; /* makes it stand out */
 }
 
 .star-rating {
   display: flex;
   gap: 2px;
-  font-size: 0.85rem;
-  color: #f3c623;
+  font-size: 0.7rem;
+  color: #de95d9; 
+  margin-top: 5px;
+  padding-top: 10px;
 }
 
 .video-duration {
   text-align: right;
-  font-size: 0.8rem;
-  color: #888;
+  font-size: 0.7rem;
+  color: #de95d9; /* darker for better visibility */
   margin-top: 5px;
 }
 
 /* MEMBERSHIP SECTION STYLES */
 .membership {
-  background-color: #001f3f; /* dark blue */
+  background-color: #071629; /* dark blue */
   padding: 60px 20px;
   text-align: center;
   color: white;
@@ -366,7 +428,7 @@ nav ul li a {
 }
 
 .membership h2 span {
-  color:  rgb(194, 12, 194); /* pink for the word "Free" */
+  color:  #c986f8; /* pink for the word "Free" */
 }
 
 .membership > div {
@@ -400,7 +462,7 @@ nav ul li a {
 
 .membership button {
   margin-top: 40px;
-  background-color: #ff69b4; /* pink */
+  background-color: #c986f8; /* pink */
   color: white;
   border: none;
   border-radius: 30px;
@@ -452,6 +514,7 @@ nav ul li a {
   font-size: 1rem;
   color: #444;
   line-height: 1.6;
+  text-align: left;
 }
 
 /* Responsive fix */
@@ -462,7 +525,7 @@ nav ul li a {
 }
 
 footer {
-  background-color: #0b1f3a; /* Dark blue */
+  background-color: #071629; /* Dark blue */
   padding: 30px 20px;
   color: white;
   font-family: Arial, sans-serif;

@@ -70,18 +70,23 @@ Match padding, margin, background images, font styles from Figma
 
 Ensure proper alignment and responsiveness
 
+https://github.com/Malex-tech/alx_html_css/blob/main/css_advanced/images/Header_Section.png
+
 3. Quotes Section
 
 Centralize recurring CSS rules (e.g., font sizes, spacing)
 
 Reuse and extend global styles for clean, maintainable code
 
+https://github.com/Malex-tech/alx_html_css/blob/main/css_advanced/images/Testimonial_Section.png
+
 4. Videos List
 
 Apply grid or flexbox to ensure responsive layout
 
 Style thumbnails, ratings, and durations based on spec
-![video List Preview](./images/banner.png)
+
+https://github.com/Malex-tech/alx_html_css/blob/main/css_advanced/images/Video_Section.png
 
 5. Membership Section
 
@@ -89,17 +94,23 @@ Use distinct background and typography
 
 Implement CTA button styling and hover effects
 
+https://github.com/Malex-tech/alx_html_css/blob/main/css_advanced/images/Membership_Section.png
+
 6. FAQ Section
 
 Accordion or simple toggle style (optional)
 
 Consistent spacing and readable font size
 
+https://github.com/Malex-tech/alx_html_css/blob/main/css_advanced/images/F.A.Q%20Section.png
+
 7. Footer
 
 Match Figma spacing, font sizes, and image/logo alignment
 
 Include any social icons or copyright
+
+https://github.com/Malex-tech/alx_html_css/blob/main/css_advanced/images/Footer_Section.png
 
 🎨 Design Tips from Figma
 

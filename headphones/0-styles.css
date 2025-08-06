@@ -11,12 +11,12 @@
 /** Header Styles **/
   
   header {
-    width: 100%;
     background-image: url("images/headphones_hero_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     color: var(--color-white);
+    width: 100%;
 
   }
 

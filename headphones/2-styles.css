@@ -10,12 +10,12 @@
 /** Header Styles **/
   
   header {
-    width: 100%;
     background-image: url("images/headphones_hero_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     color: var(--color-white);
+    width: 100%;
 
   }
 
@@ -277,10 +277,13 @@
   }
 
   main .grid .element p {
-    width: 100%;
+    width: 60%;
     margin: 0;
     font-size: 14px;
-    padding: 0; 
+    padding: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto; 
   }
   
   main .grid .element h2 {
@@ -369,9 +372,9 @@
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  padding: 15px 0;
+  padding: 10px 0;
   margin-top: 35px;
-
+  
 }
 
 .pentagone .label {
@@ -379,4 +382,5 @@
   font-size: 0.9rem;
   color: #ddd;
   margin-top: 5px;
+ 
 }

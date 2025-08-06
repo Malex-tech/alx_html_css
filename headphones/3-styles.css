@@ -10,13 +10,12 @@
 /** Header Styles **/
   
   header {
-    width: 100%;
     background-image: url("images/headphones_hero_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     color: var(--color-white);
-
+    width: 100%;
   }
 
   header .header {
@@ -272,11 +271,14 @@
     margin: 0.5rem; 
   }
 
-  main .grid .element p {
-    width: 100%;
+   main .grid .element p {
+    width: 60%;
     margin: 0;
     font-size: 14px;
-    padding: 0; 
+    padding: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
   }
   
   main .grid .element h2 {
@@ -405,7 +407,7 @@
 .input-group textarea {
     width: 100%;
     border: none;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #c8c5c5;
     outline: none;
     font-size: 16px;
     background: transparent;
@@ -415,7 +417,7 @@
 .input-group label {
     position: absolute;
     left: 0;
-    bottom: 8px;         /* sits directly on the line */
+    bottom: 4px;         /* sits directly on the line */
     font-weight: bold;
     pointer-events: none;
 }

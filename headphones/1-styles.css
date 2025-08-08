@@ -9,7 +9,12 @@
   }
 
 /** Header Styles **/
-  
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
   header {
     background-image: url("images/headphones_hero_1.jpg");
     background-repeat: no-repeat;

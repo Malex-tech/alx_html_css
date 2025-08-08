@@ -8,7 +8,12 @@
   }
 
 /** Header Styles **/
-  
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
   header {
     width: 100%;
     background-image: url("images/headphones_hero_1.jpg");
@@ -450,6 +455,13 @@ button:hover {
     background-color: #cc0000;
 }
 
+/** Media queries **/
+  @media (max-width: 480px) {
+    input {
+      width: 90%;
+    }
+  }
+
 /* Footer */
 footer {
     background: #071629;
@@ -490,7 +502,6 @@ footer {
   .footer-nav li {
     margin: 0 0.5rem;
   }
-
 
   /** media queries **/
   

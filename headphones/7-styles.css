@@ -15,12 +15,13 @@
 }
 
   header {
+    width: 100%;
     background-image: url("images/headphones_hero_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     color: var(--color-white);
-    width: 100%;
+   
 
   }
 
@@ -241,13 +242,9 @@
       top: 1px;
       margin: auto;
     }
-  
-   
   }
 
-
-   /** Main Section - Style Sheet 1-index - What we do **/
-  
+   /** Main Section - What we do **/
    main {
     width: 100%;
     position: relative;
@@ -277,18 +274,49 @@
     text-align: center;  
   }
   
+/* Base animation style for items */
+.animate-item {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Continuous floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-item {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Hover effect: scale + rotate slightly */
+.animate-item:hover {
+  transform: scale(1.05) rotate(1deg);
+  opacity: 0.9;
+}
+
+/* Optional for icons in 'What we do' */
+.animate-item span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.animate-item:hover span {
+  transform: rotate(10deg) scale(1.2);
+}
+
   main .grid .element {
     margin: 0.5rem; 
   }
 
-  main .grid .element p {
+   main .grid .element p {
     width: 60%;
     margin: 0;
     font-size: 14px;
     padding: 0;
     text-align: center;
     margin-left: auto;
-    margin-right:auto; 
+    margin-right:auto;  
   }
   
   main .grid .element h2 {
@@ -303,7 +331,6 @@
     font-size: 46px;
   }
   
-
   .section-title {
     width: 100%;
     margin: auto;
@@ -331,11 +358,12 @@
       margin: auto;
     }
   }
+
 .results-section {
-  background-image: url("images/headphones_hero_2.jpg"); /* change path if different */
+  width: 100vw;
+  background-image: url("images/headphones_hero_2.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   padding: 80px 0;
   color: #fff;
   text-align: center;
@@ -378,9 +406,9 @@
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 0;
   margin-top: 35px;
-  
+
 }
 
 .pentagone .label {
@@ -388,5 +416,141 @@
   font-size: 0.9rem;
   color: #ddd;
   margin-top: 5px;
- 
 }
+
+/* Contact Us styles */
+.contact-section {
+    background-color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.contact-section form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #c8c5c5;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    padding: 6px 0;
+}
+
+.input-group label {
+    position: absolute;
+    left: 0;
+    bottom: 4px;         /* sits directly on the line */
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.input-group input:focus + label,
+.input-group textarea:focus + label {
+    color: red;          /* optional focus color change */
+}
+
+.input-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    padding: 12px 28px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color .3s;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+/* Footer */
+footer {
+    background: #071629;
+    color: white;
+  }
+  
+  footer nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer .container {
+    padding: 4rem 4rem 3rem 4rem;
+    flex-wrap: wrap;
+  }
+
+  footer p {
+    font-size: var(--font-small);
+    font-family: var(--font);
+    margin: 3rem auto 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0.35;
+  }
+  
+  .footer-nav {
+    display: inline-flex;
+    margin: auto 0;
+    padding: 0;
+    font-weight: bolder;
+    font-family: var(--font);
+    list-style-type: none;
+    font-size: var(--font-large);
+  
+  }
+  
+  .footer-nav li {
+    margin: 0 0.5rem;
+  }
+
+
+  /** media queries **/
+  
+  @media (max-width: 480px) {
+    footer .container {
+      padding: 3rem 4rem;
+    }
+  
+    footer nav {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+   
+    }
+    .footer-nav {
+        margin: 3rem auto;
+      }
+  
+    footer .logo {
+      max-width: 50%;
+    }
+    footer p {
+        margin: 0 auto;
+      }
+  
+  }

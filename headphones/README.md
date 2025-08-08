@@ -66,8 +66,6 @@ GitHub: [your_handle]
 
 > Github: https://github.com/Malex-tech
 
-> Twiiter: https://twitter.com/karlgarmor
-
 > Linkedin: https://www.linkedin.com/in/malexy/
 
 
